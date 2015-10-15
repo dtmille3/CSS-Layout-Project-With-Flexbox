@@ -1,0 +1,97 @@
+/****************************************
+ *  Inherited Syles
+ *****************************************
+
+/*
+ *See this explanation for details
+ *https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html
+  box-sizing: border-box
+  color: #444
+  font: 12pt 'Open Sans', Arial
+  font-weight: 300
+
+*
+  box-sizing: inherit
+  color: inherit
+  font: inherit
+
+  &::before, &::after
+    box-sizing: inherit
+    color: inherit
+    font: inherit
+
+/****************************************
+ *  Defaults
+ *****************************************
+
+body
+  background-color: #007EC9
+
+span
+  font-family: 'Allan', cursive
+  font-size: 20px
+
+div >
+  aside, main
+    font-family: 'Open Sans', sans-serif
+    font-size: 12px
+
+/****************************************
+ *  Helpers
+ *****************************************
+
+.bigdiv
+  background-color: #007EC9
+
+.asidediv, .maindiv
+  background-color: #fff
+  border: 4px
+  border-style: solid
+  border-color: #6DC1E4
+  border-radius: 5px
+  padding: 10px
+  margin: 0px
+
+.asidediv
+  height: 300px
+
+.maindiv
+  width: 600px
+
+.label
+  width: 5.5em
+  margin-left: 80px
+  padding: 0px
+
+/****************************************
+ *  Layout
+ *****************************************
+
+div
+  padding: 3px
+  margin: 1px
+  display: flex
+
+.divbottomborder
+  border-bottom: 1px solid #ddd
+
+/****************************************
+ *  Components
+ *****************************************
+
+#submit
+  color: #fff
+  background-color: #7EDC58
+  border: none
+  border-radius: 5px
+  box-shadow: 2px 2px 0px 0px #296A0D
+
+#cancel
+  color: #fff
+  background-color: #E40000
+  border: none
+  border-radius: 5px
+  box-shadow: 2px 2px 0px 0px #720912
+  margin-left: 3px
